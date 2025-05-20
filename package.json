@@ -1,0 +1,15 @@
+{
+  "name": "cypress-study",
+  "version": "1.0.0",
+  "description": "Projeto de estudos de testes automatizados com Cypress",
+  "scripts": {
+    "cy:open": "cypress open --e2e",
+    "cy:run": "cypress run --e2e",
+    "cy:run:chrome": "cypress run --e2e --browser chrome",
+    "cy:run:firefox": "cypress run --e2e --browser firefox",
+    "cy:verify": "cypress verify"
+},
+  "devDependencies": {
+    "cypress": "^14.3.3"
+  }
+}
