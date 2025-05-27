@@ -1,6 +1,12 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://antoniotrindade.com.br/treinoautomacao/')
+describe('Testes validação da home', () => {
+  
+  
+  it('Deve validar o título da página', () => {
+    
+    cy.visit('/')
     cy.title().should('eq', 'Treino Automação de Testes')
+
   })
+
+
 })

@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import loc from './locators'
+
+Cypress.Commands.add('login', (environment, user, password) => { 
+    cy.get(loc.LOGIN.TF_WORKSPACE).type(environment)
+    cy.get(loc.LOGIN.TF_USERNAME).type(user)
+    cy.get(loc.LOGIN.TF_PASSWORD).type(password)
+    cy.get(loc.LOGIN.BTN_LOGIN).click()
+})
+
+Cypress.Commands.add('search', (description) => {
+    cy.get(loc.LIST_LOCAL.TF_SEARCH).type(description)
+    cy.get(loc.LIST_LOCAL.BTN_SEARCH).click()
+})

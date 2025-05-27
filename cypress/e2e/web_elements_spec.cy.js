@@ -100,11 +100,11 @@ describe('Validando elementos web', () => {
 
     it('Trabalhando com wrap (empacotar em objetos Cypress', () => {
         cy.get('[name=txtbox1]').then($tfbox1 => {  
-            cy.wrap($tfbox1).type('Antônio Trindade').should('have.value', 'Antônio Trindade')
+            cy.wrap($tfbox1).type('Antônio Trindade').should('have.value', 'Gustavo Supranzetti')
             
             
             // $tfbox1.val('Antônio Trindade')
-            // expect($tfbox1).to.have.value('Antônio Trindade')
+            // expect($tfbox1).to.have.value('Gustavo Supranzetti')
         })
 
 
